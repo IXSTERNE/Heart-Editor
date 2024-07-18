@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QFontDatabase>
 #include <QApplication>
+#include <QLabel>
 
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent)
@@ -92,6 +93,7 @@ void MainWindow::applyPixelFont()
         QFont pixelFont(family, 12);
         pixelFont.setStyleStrategy(QFont::NoAntialias);
 
+        QApplication::setFont(pixelFont);
         menuBar()->setFont(pixelFont);
         m_fileMenu->setFont(pixelFont);
         m_editMenu->setFont(pixelFont);
@@ -166,10 +168,34 @@ void MainWindow::saveFile()
 
 void MainWindow::exit()
 {
-    QMessageBox::StandardButton reply;
-    reply = QMessageBox::question(this, "Exit", "Are you sure you want to exit?",
-        QMessageBox::Yes | QMessageBox::No);
-    if (reply == QMessageBox::Yes) 
+    QMessageBox messageBox(this);
+    messageBox.setText("Are you sure you want to exit?");
+    messageBox.setWindowTitle("Exit");
+    messageBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    messageBox.setDefaultButton(QMessageBox::No);
+
+    messageBox.setStyleSheet(R"(
+        QMessageBox {
+            background-color: #FADDE1;
+            border: 2px solid black;
+        }
+        QPushButton {
+            background-color: white;
+            border: 2px solid black;
+            padding: 5px;
+            min-width: 60px;
+        }
+        QPushButton:hover {
+            background-color: #FFB6C1;
+        }
+    )");
+
+    QFont pixelFont = this->font();
+    messageBox.setFont(pixelFont);
+
+    int reply = messageBox.exec();
+
+    if (reply == QMessageBox::Yes)
     {
         QApplication::quit();
     }
