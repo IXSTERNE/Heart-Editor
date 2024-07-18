@@ -4,7 +4,6 @@
 #include <QMessageBox>
 #include <QFontDatabase>
 #include <QApplication>
-#include <QLabel>
 
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent)
@@ -115,11 +114,11 @@ void MainWindow::applyCustomStyle()
         QMenu{
             border: 2px solid black;
             padding: 2px;
-            background-color: white;
+            background-color: #fbf1d0;
         }
         QMenu::item:selected{
             background: transparent;
-            background-color: #FADDE1;
+            background-color: #fbe6ac;
             background-image: url(:/resources/assets/heart.png);
             background-repeat: no-repeat;
             background-position: center;
@@ -181,7 +180,7 @@ void MainWindow::exit()
         }
         QPushButton {
             background-color: white;
-            border: 2px solid black;
+            border: 2px solid white;
             padding: 5px;
             min-width: 60px;
         }
