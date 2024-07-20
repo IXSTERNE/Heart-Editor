@@ -95,12 +95,8 @@
     <ClCompile Include="CustomTextEdit.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="MainWindow.cpp" />
-    <ClCompile Include="PixelButton.cpp" />
     <QtUic Include="Pixel.ui" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="PixelButton.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWindow.h" />

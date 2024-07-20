@@ -1,7 +1,6 @@
 #pragma once
 
 #include <QMainWindow.h>
-#include "PixelButton.h"
 #include "FileManager.h"
 #include "CustomTextEdit.h"
 #include <QTextEdit>
@@ -25,8 +24,6 @@ private:
 	void setupUi();
 	void applyPixelFont();
 	void applyCustomStyle();
-
-	PixelButton* m_saveButton;
 
 	CustomTextEdit* m_textEdit;
 	QMenu* m_fileMenu;

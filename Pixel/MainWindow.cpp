@@ -19,22 +19,13 @@ void MainWindow::setupUi()
 {
     QWidget* centralWidget = new QWidget(this);
     QVBoxLayout* layout = new QVBoxLayout(centralWidget);
-    layout->setSpacing(0);
-    layout->setContentsMargins(8, 0, 8, 8);
 
-    //m_saveButton = new PixelButton("Click me", 8);
-    //layout->addWidget(m_saveButton);
+    layout->setContentsMargins(8, 0, 8, 8);
 
     m_textEdit = new CustomTextEdit(this);
 
     layout->addWidget(m_textEdit);
-    //setCentralWidget(m_textEdit);
     setCentralWidget(centralWidget);
-
-    // Setting custom cursor
-    //QPixmap cursorPixmap(":/resources/assets/custom_cursor.png");
-    //QCursor customCursor(cursorPixmap);
-    //m_textEdit->setCursor(customCursor);
 }
 
 void MainWindow::createActions()
@@ -176,7 +167,6 @@ void MainWindow::exit()
     messageBox.setStyleSheet(R"(
         QMessageBox {
             background-color: #FADDE1;
-            border: 2px solid black;
         }
         QPushButton {
             background-color: white;

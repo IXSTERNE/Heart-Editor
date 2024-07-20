@@ -1,6 +1,3 @@
-#ifndef CUSTOMTEXTEDIT_H
-#define CUSTOMTEXTEDIT_H
-
 #include <QTextEdit>
 #include <QMenu>
 #include <QContextMenuEvent>
@@ -15,5 +12,3 @@ public:
 protected:
     void contextMenuEvent(QContextMenuEvent* event) override;
 };
-
-#endif // CUSTOMTEXTEDIT_H
