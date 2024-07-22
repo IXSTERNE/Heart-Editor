@@ -92,9 +92,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CustomTextEdit.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="TextEditor.cpp" />
     <QtUic Include="Pixel.ui" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -102,8 +103,9 @@
     <QtMoc Include="MainWindow.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="CustomTextEdit.h" />
     <ClInclude Include="FileManager.h" />
+    <QtMoc Include="TextEditor.h" />
+    <QtMoc Include="MenuBar.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
