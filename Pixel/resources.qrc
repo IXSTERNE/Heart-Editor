@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/resources">
-        <file>fonts/minecraft.ttf</file>
-        <file>assets/heart.png</file>
-        <file>assets/custom_cursor.png</file>
-    </qresource>
-</RCC>
