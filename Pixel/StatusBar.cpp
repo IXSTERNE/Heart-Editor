@@ -2,6 +2,7 @@
 
 StatusBar::StatusBar(QWidget* parent) : QStatusBar(parent)
 {
+    editor = new TextEditor();
     statusLabel = new QLabel(this);
     addPermanentWidget(statusLabel);
 }
@@ -10,7 +11,6 @@ StatusBar::~StatusBar()
 {
 
 }
-
 
 void StatusBar::connectEditor(TextEditor* editor)
 {

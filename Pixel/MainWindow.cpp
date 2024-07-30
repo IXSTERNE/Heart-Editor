@@ -34,7 +34,6 @@ void MainWindow::setupUi()
 
 void MainWindow::createTriggers()
 {
-
     QObject::connect(menuBar->m_newAction, &QAction::triggered, this, &MainWindow::clearTextFile);
     QObject::connect(menuBar->m_openAction, &QAction::triggered, this, &MainWindow::openTextFile);
     QObject::connect(menuBar->m_saveAction, &QAction::triggered, this, &MainWindow::saveTextFile);
