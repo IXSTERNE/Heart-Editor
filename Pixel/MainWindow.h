@@ -3,6 +3,7 @@
 #include "MenuBar.h"
 #include "FileManager.h"
 #include "TextEditor.h"
+#include "StatusBar.h"
 #include <QMainWindow>
 #include <QPlainTextEdit>
 
@@ -26,6 +27,7 @@ private:
 	FileManager m_fileManager;
 	MenuBar* menuBar;
 	TextEditor* editor;
+	StatusBar* status;
 };
 
 

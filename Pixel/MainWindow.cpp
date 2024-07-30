@@ -12,8 +12,11 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent)
 {
     menuBar = new MenuBar();
     editor = new TextEditor();
+    status = new StatusBar();
     setupUi();
     createTriggers();
+
+    status->connectEditor(editor);
 }
 
 void MainWindow::setupUi()
@@ -26,6 +29,7 @@ void MainWindow::setupUi()
 
     setMenuBar(menuBar);
     setCentralWidget(centralWidget);
+    setStatusBar(status);
 }
 
 void MainWindow::createTriggers()
