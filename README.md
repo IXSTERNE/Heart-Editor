@@ -1,6 +1,6 @@
 # Heart-Editor
 
-It's pretty much just a Qt6 GUI application with but of styling.
+It's pretty much just a Qt6 GUI application with a bit of styling. This pretty much exist so I can modularize my codes better?
 
 A stylized editor with bitmap font and custom:
 * Menu Bar
