@@ -15,4 +15,4 @@ You can just download the latest release or clone the repo and build the project
 
 ## Screenshot
 
-![screenshort_ims](/screenshot/image_001)
+![screenshort_ims](Heart/screenshot/image_001)
